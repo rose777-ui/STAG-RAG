@@ -1,3 +1,5 @@
+
+
 # STAG-RAG
 ### Spatially-Grounded, Topology-Aware Graph-RAG for Multi-Hop Reasoning over 3D Scene Graphs
 
@@ -195,4 +197,75 @@ The original notebooks were designed to use libraries pre-installed in the Kaggl
 
 This project uses:
 
-- **3DSSG:** Object categories, attributes, and
+- **3DSSG:** Object categories, attributes, and relationship annotations across 1,335 scans.
+- **3RScan:** RGB-D reconstructions, camera information, meshes, and oriented bounding-box annotations.
+- **3DSSG-MultiHopQA:** The benchmark generated during this project.
+
+The original experiments stored datasets as private Kaggle datasets and loaded them automatically from the notebooks.
+
+**Dataset files are not redistributed in this repository.** Users should obtain them from their official sources and follow the applicable research and usage terms.
+
+---
+
+## Important Experimental Limitations
+
+The reported results should be interpreted in the context of the project's experimental design.
+
+- Several OSU-3DSG perception components are replaced with annotation-based oracles, including object segmentation, object labeling, and relationship prediction.
+- The Stage-1 geometric reproduction uses one RGB-D scan, while the geometry-filter experiments use ten selected scenes.
+- The experiments therefore evaluate the proposed evidence-selection and retrieval methods under controlled inputs; they do not establish equivalent performance for a complete real-world perception pipeline.
+- The real LLM-reader experiment uses Qwen2.5-7B-Instruct, and its results may differ with other readers.
+
+These limitations are important when interpreting the reported accuracy and considering deployment in real robotic environments.
+
+---
+
+## Potential Applications
+
+- Spatial question answering for indoor environments.
+- Embodied AI and service robotics.
+- Scene understanding for augmented-reality assistants.
+- Evidence-grounded multi-hop reasoning.
+- Graph-based retrieval and task planning.
+
+---
+
+## Research Team
+
+**Department of Computer Science and Engineering**  
+United International University (UIU)
+
+**Project Supervisor:**  
+Azizur Rahman Anik  
+Lecturer, Department of Computer Science and Engineering
+
+**Project Contributors:**
+- Rokia Jannat
+- Tanjina Akter
+- Md. Al Imran
+- Md. Ashikur Rahman Puspo
+- Golam Alahi Mim
+
+**Project Report:** October 2026
+
+---
+
+## Acknowledgement
+
+We acknowledge the authors of OSU-3DSG, 3DSSG, and 3RScan, along with the open-source libraries and computing platforms used in this research.
+
+---
+
+## Citation
+
+If you use this work, please cite the project report:
+
+**Rokia Jannat, Tanjina Akter, Md. Al Imran, Md. Ashikur Rahman Puspo, and Golam Alahi Mim.**  
+*Spatially-Grounded, Topology-Aware Graph-RAG for Multi-Hop Reasoning over 3D Scene Graphs.*  
+Final Year Design Project Report, Department of Computer Science and Engineering, United International University, October 2026.
+
+---
+
+**Project Repository:** https://github.com/rose777-ui/STAG-RAG
+
+**Author GitHub:** https://github.com/rose777-ui
